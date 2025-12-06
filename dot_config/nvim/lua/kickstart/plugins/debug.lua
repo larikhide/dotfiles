@@ -27,30 +27,37 @@ return {
 	keys = {
 		-- Basic debugging keymaps, feel free to change to your liking!
 		{
-			"<F1>",
+			"<F6>",
 			function()
 				require("dap").continue()
 			end,
 			desc = "Debug: Start/Continue",
 		},
 		{
-			"<F2>",
-			function()
-				require("dap").step_over()
-			end,
-			desc = "Debug: Step Over",
-		},
-		{
-			"<F3>",
+			"<F7>",
 			function()
 				require("dap").step_into()
 			end,
 			desc = "Debug: Step Into",
 		},
 		{
-			"<F4>",
+			"<F8>",
+			function()
+				require("dap").step_over()
+			end,
+			desc = "Debug: Step Over",
+		},
+		{
+			"<F9>",
 			function()
 				require("dap").step_out()
+			end,
+			desc = "Debug: Step Out",
+		},
+		{
+			"<F10>",
+			function()
+				require("dap").terminate()
 			end,
 			desc = "Debug: Step Out",
 		},
