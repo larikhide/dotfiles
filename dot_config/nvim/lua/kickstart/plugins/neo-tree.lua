@@ -20,6 +20,7 @@ return {
 				mappings = {
 					["\\"] = "close_window",
 				},
+				position = "float",
 			},
 			follow_current_file = {
 				enabled = true,
