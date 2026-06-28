@@ -133,5 +133,7 @@ function y() {
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 # for rootless docker
 export DOCKER_HOST=unix://$XDG_RUNTIME_DIR/docker.sock
+# gobin
+export PATH=$PATH:/usr/local/go/bin
 # path for protoc
 export PATH="$PATH:$(go env GOPATH)/bin"
